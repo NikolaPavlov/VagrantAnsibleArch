@@ -5,6 +5,8 @@
   become: true
 
   roles:
+    - user
+    - dns_setup
     - reflector_rank_mirrors
     - update_upgrade
     - base_pkgs_install

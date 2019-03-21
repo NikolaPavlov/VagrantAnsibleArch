@@ -1,0 +1,11 @@
+---
+
+
+- name: Create user "{{user.name}}" in wheel group
+  user:
+    name: "{{ user.name }}"
+    password: "{{ user.pass }}"
+    # uid: "{{ user.uid }}"
+    update_password: on_create
+    groups: wheel
+    createhome: yes

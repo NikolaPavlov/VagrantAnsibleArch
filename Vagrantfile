@@ -1,10 +1,12 @@
 Vagrant.configure("2") do |config|
     config.vm.box = "archlinux/archlinux"
     config.vm.network :private_network, ip: "192.168.111.111"
-    config.vm.hostname = "archy-official"
-    config.vm.define "archy-official"
+    # config.vm.network :public_network
+    # config.vm.network "forwarded_port", host: 8080, guest: 80
+    config.vm.hostname = "archy"
+    config.vm.define "archy"
     config.vm.provider :virtualbox do |vb|
-        vb.name = "archy-official"
+        vb.name = "archy"
     end
 
     ####### Provision #######

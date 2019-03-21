@@ -1,0 +1,8 @@
+---
+# tasks file for provision/roles/dns_setup
+
+- name: Creating /etc/resolv.conf
+  template:
+    src: resolv.conf.j2
+    dest: /etc/resolv.conf
+  when: dns_address is defined

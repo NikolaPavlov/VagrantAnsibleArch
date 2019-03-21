@@ -1,5 +1,7 @@
 user:
-    name: vagrant
+    name: gogo
+    pass: 89c9af0ae6e53ecec995889e373e5bd43f0a875381191d89cce82d4796573fe5d81ab9604dd069b6dba216d836811766b9cb32264e956463b6956811a1e8abb8
+    uid: 1234
 
 dotfiles:
     url: https://github.com/NikolaPavlov/Dotfiles_b
@@ -50,3 +52,9 @@ user_packages:
     - zathura
     - terminus-font
     - ttf-hack
+    - atom
+    - docker
+    - python-pip
+    - ipython
+
+dns_address: 8.8.8.8
