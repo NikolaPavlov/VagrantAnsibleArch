@@ -4,8 +4,9 @@
   gather_facts: yes
   become: true
 
-  # roles:
-  #   - update_upgrade
-  #   - nettools
-  #   - dotfiles
-
+  roles:
+    - reflector_rank_mirrors
+    - update_upgrade
+    - base_pkgs_install
+    - user_pkgs_install
+    - dotfiles

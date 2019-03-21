@@ -1,0 +1,5 @@
+---
+- name: Install user pkgs with Pacman
+  pacman:
+    name: "{{ user_packages }}"
+    state: present

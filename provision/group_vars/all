@@ -1,0 +1,52 @@
+user:
+    name: vagrant
+
+dotfiles:
+    url: https://github.com/NikolaPavlov/Dotfiles_b
+    destination: Documents/Repos/Dotfiles
+
+base_packages:
+    - base
+    - base-devel
+    - git
+    - openssh
+    - htop
+    - rsync
+    - gzip
+    - pacman-contrib
+
+user_packages:
+    - xorg-server
+    - xorg-xinit
+    - i3-gaps
+    - dmenu
+    - feh
+    - alsa
+    - alsa-utils
+    - calibre
+    - chromium
+    - cmus
+    - fzy
+    - gparted
+    - irssi
+    - keepassx2
+    - lxappearance
+    - mplayer
+    - mpv
+    - neofetch
+    - neovim
+    - nmap
+    - nnn
+    - vifm
+    - ntfs-3g
+    - pydf
+    - redshift
+    - sakura
+    - telegram-desktop
+    - thunderbird
+    - transmission-qt
+    - vagrant
+    - xclip
+    - zathura
+    - terminus-font
+    - ttf-hack
