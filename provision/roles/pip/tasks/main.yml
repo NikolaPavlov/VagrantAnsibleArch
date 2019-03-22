@@ -1,0 +1,5 @@
+---
+- pip:
+    name: virtualenvwrapper
+    # virtualenv: /home/"{{ user.name }}"/.virtualenvs/neovim
+    # virtualenv: /home/gogo/.virtualenvs/neovim

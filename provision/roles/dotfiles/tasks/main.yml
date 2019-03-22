@@ -3,9 +3,10 @@
 - name: Clone user dotfiles
   git: repo={{ dotfiles.url }} dest=/home/{{ user.name }}/{{ dotfiles.destination }} accept_hostkey=yes update=no
   when: dotfiles is defined
-  become: yes
+  become_user: "{{ user.name }}"
 
 - name: Install the dotfiles
   command: sh install.sh
   args:
     chdir: /home/{{ user.name }}/{{ dotfiles.destination }}
+  become_user: " {{ user.name }}"
