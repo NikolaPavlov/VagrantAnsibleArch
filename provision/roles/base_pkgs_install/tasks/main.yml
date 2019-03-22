@@ -1,5 +1,0 @@
----
-- name: Install base pkgs with Pacman
-  pacman:
-    name: "{{ base_packages }}"
-    state: present

@@ -7,9 +7,7 @@
   roles:
     - user
     - dns_setup
-    - reflector_rank_mirrors
-    - update_upgrade
-    - base_pkgs_install
-    - user_pkgs_install
-    - dotfiles
+    - reflector
+    - pacman
     - pip
+    - dotfiles

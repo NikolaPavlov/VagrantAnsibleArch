@@ -1,7 +1,7 @@
 ---
 # tasks file for provision/roles/dns_setup
 
-- name: Creating /etc/resolv.conf
+- name: Creating new /etc/resolv.conf with "{{ dns_address }}" address
   template:
     src: resolv.conf.j2
     dest: /etc/resolv.conf

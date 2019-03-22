@@ -1,0 +1,9 @@
+---
+# tasks file for reflector_rank_mirrors
+- name: Install reflector
+  pacman:
+    name: reflector
+    state: present
+
+- name: Ranking mirrors
+  command: reflector --latest 5 --protocol http --protocol https --sort rate --save /etc/pacman.d/mirrorlist

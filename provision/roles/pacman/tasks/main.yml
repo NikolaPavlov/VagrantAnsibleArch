@@ -1,0 +1,15 @@
+---
+- name: Update and upgrade the system
+  pacman:
+    update_cache: yes
+    upgrade: yes
+
+- name: Install base pkgs
+  pacman:
+    name: "{{ base_packages }}"
+    state: present
+
+- name: Install user pkgs
+  pacman:
+    name: "{{ user_packages }}"
+    state: present

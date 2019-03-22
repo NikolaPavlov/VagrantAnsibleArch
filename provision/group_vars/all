@@ -69,4 +69,3 @@ dns_address: 8.8.8.8
 
 
 virtualenv_dir: /home/vagrant/.virtualenvs/neovim
-
