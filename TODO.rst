@@ -1,3 +1,4 @@
 [] Install virtualenvwrapper from pip
-[] Create neovim virtualenv
+[x] Create neovim virtualenv
+[] Add ~/Projects folder
 
