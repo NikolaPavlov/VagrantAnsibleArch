@@ -12,3 +12,4 @@
     - base_pkgs_install
     - user_pkgs_install
     - dotfiles
+    - pip

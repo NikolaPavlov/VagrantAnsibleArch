@@ -1,6 +1,6 @@
 user:
-    name: gogo
-    pass: 89c9af0ae6e53ecec995889e373e5bd43f0a875381191d89cce82d4796573fe5d81ab9604dd069b6dba216d836811766b9cb32264e956463b6956811a1e8abb8
+    name: vagrant
+    pass: vagrant
     uid: 1234
 
 dotfiles:
@@ -18,43 +18,55 @@ base_packages:
     - pacman-contrib
 
 user_packages:
+    - python-virtualenv
     - xorg-server
     - xorg-xinit
-    - i3-gaps
-    - dmenu
     - feh
-    - alsa
-    - alsa-utils
-    - calibre
-    - chromium
-    - cmus
     - fzy
-    - gparted
-    - irssi
-    - keepassx2
-    - lxappearance
-    - mplayer
-    - mpv
+    - fzf
     - neofetch
     - neovim
     - nmap
-    - nnn
     - vifm
-    - ntfs-3g
     - pydf
-    - redshift
     - sakura
+    - xclip
+    - terminus-font
+    - ttf-hack
+    - python-pip
+    - ipython
+    - lsd
+    - ruby
+    - autojump
+    - tree
+
+additional_packages:
+    - ntfs-3g
+    - zathura
+    - i3-gaps
+    - dmenu
+    - alsa
+    - alsa-utils
+    - gparted
+    - lxappearance
+    - irssi
+    - keepassx2
+    - mplayer
+    - mpv
+    - redshift
     - telegram-desktop
     - thunderbird
     - transmission-qt
     - vagrant
-    - xclip
-    - zathura
-    - terminus-font
-    - ttf-hack
     - atom
     - docker
-    - python-pip
-    - ipython
+    - calibre
+    - chromium
+    - cmus
+
 
 dns_address: 8.8.8.8
+
+
+virtualenv_dir: /home/vagrant/.virtualenvs/neovim
+
