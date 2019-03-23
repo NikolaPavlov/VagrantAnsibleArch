@@ -6,4 +6,5 @@
 - [] Implement Arch general recommendations
 - [] Fix the hacky DNS resolv.conf
 - [] Create new user, added to %wheel, allow %wheel to execute withowth pass
+- [] Install fonts
 
