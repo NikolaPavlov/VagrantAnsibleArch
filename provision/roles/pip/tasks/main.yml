@@ -5,4 +5,5 @@
     virtualenv: "{{ virtualenv_dir }}"
 
 - name: Install virtualenvwrapper
-  pip: name: virtualenvwrapper
+  pip:
+    name: virtualenvwrapper

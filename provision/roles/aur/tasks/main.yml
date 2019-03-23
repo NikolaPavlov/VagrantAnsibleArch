@@ -1,0 +1,5 @@
+# external lib:
+# https://github.com/kewlfft/ansible-aur
+
+- aur: name=powerline-go skip_installed=true
+  become_user: vagrant
