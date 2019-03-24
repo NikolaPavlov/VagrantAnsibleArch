@@ -1,9 +1,8 @@
 ---
 - name: Creating neovim virtualenv and install pynvim in it
   pip:
-    name: neovim
+    name:
+      - neovim
+      - virtualenvwrapper
     virtualenv: "{{ virtualenv_dir }}"
 
-- name: Install virtualenvwrapper
-  pip:
-    name: virtualenvwrapper
