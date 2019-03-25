@@ -3,3 +3,7 @@
 
 - aur: name=powerline-go skip_installed=true
   become_user: vagrant
+
+- name: Install yay with makepkg
+  aur: name=yay skip_installed=true  use=makepkg
+  become_user: vagrant

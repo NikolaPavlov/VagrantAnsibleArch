@@ -6,4 +6,4 @@
     state: present
 
 - name: Ranking mirrors
-  command: reflector --latest 5 --protocol http --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+  command: reflector --latest 100 --protocol http --protocol https --sort rate --save /etc/pacman.d/mirrorlist

@@ -3,6 +3,5 @@
   pip:
     name:
       - neovim
-      - virtualenvwrapper
     virtualenv: "{{ virtualenv_dir }}"
 
